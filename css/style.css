@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Start Navbar */
+
+.navbar {
+  background-color: #010810;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000000000;
+  padding: 0;
+}
+
+.navbar .navbar-brand img {
+  width: 20vmin;
+  margin-right: 2vmin;
+}
+
+.navbar .navbar-nav {
+  margin-right: 15vh;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 2.5vmin;
+  margin-left: 1.5vh;
+  color: #efdbdb;
+  font-weight: bold
+}
+
+.navbar .navbar-nav .active>.nav-link,
+.navbar .navbar-nav .nav-link:hover {
+  color: #ff8100;
+}
+
+.navbar .navbar-toggler {
+  background-color: #f59f53;
+}
+
+.navbar .navbar-toggler:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar .navbar-nav i {
+  color: #ff8100;
+  font-size: 3vmin;
+  margin-left: 2vh;
+  border: 1px solid #ff8100;
+  padding: -1px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* End Navbar */
+/* Start Home */
+.home {
+  background-image: url('../image/Setrex Background.png');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home .home-info {
+  padding-top: 30vh;
+  padding-left: 5vh;
+  color: #FFF;
+}
+
+.home .home-info h1 {
+  font-size: 8vmin;
+}
+
+.home .home-info h1:last-of-type {
+  color: #ff8100;
+}
+
+.home .home-info p {
+  margin-top: 2vh;
+}
+
+/* End Home */
+/* Start About Us */
+.about-us {
+  background-image: url('../image/llxcmolvb1so4vwy.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  color: #b6b6b6;
+  padding-top: 30vh;
+}
+
+.about-us .about-us-info {
+  padding-left: 10vh;
+}
+
+
+/* End About Us */
+/* Start plan */
+.plans {
+  background-image: url('../image/Setrex Background.png');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.plans .row {
+  justify-content: space-between;
+}
+
+.plans .card {
+  width: 22%;
+  background-color: rgba(0, 14, 27, .2);
+  color: #CCC;
+  border: 1px solid #103e57;
+  padding: 5vmin;
+  position: relative;
+}
+
+.plans .card .card-header {
+  color: #cc9e6f;
+  margin-bottom: 2vmin;
+}
+
+.plans .card ul li {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 4vmin;
+}
+
+.plans .card p {
+  margin-bottom: 5vmin;
+
+}
+
+.plans .card button {
+  position: absolute;
+  bottom: 2vmin;
+  width: 50%;
+  right: 50%;
+  justify-content: center;
+  left: 25%;
+}
+
+/* End Plan */
+/* Start Note */
+.notes {
+  background-image: url('../image/llxcmolvb1so4vwy.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  color: aliceblue;
+  position: relative;
+}
+
+.notes p {
+  margin-bottom: 5vh;
+  color: #efdbdb;
+}
+
+.notes .row {
+  justify-content: space-between;
+}
+
+.notes .note {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 2vmin;
+  margin-bottom: 1vh;
+  background-color: rgba(16, 62, 87, .5);
+}
+
+.notes .note i {
+  font-size: 4vmin;
+  color: #f59f53;
+  margin-right: 1vmin;
+}
+
+.notes .note span {
+  font-size: 3vmin;
+  font-weight: 700;
+}
+
+.notes .note p {
+  margin-top: 3vh;
+}
+
+/* End Note */
+/* Start Calculator */
+.calculator {
+  background-image: url('../image/Setrex Background.png');
+  background-size: cover;
+  min-height: 100vh;
+  color: #FFF;
+  position: relative;
+}
+
+.calculator p {
+  margin-bottom: 5vh;
+}
+
+.calculator form {
+  margin: auto;
+  width: 80%;
+  margin-top: 10vh;
+  border: 1px solid #010810;
+  padding: 10vmin;
+  border-radius: 5px;
+  background-color: rgb(227 213 200 / 10%);
+}
+
+.calculator form input,
+.calculator form select {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.calculator form input::placeholder {
+  color: #FFF;
+  font-size: 3vmin;
+  font-weight: 500;
+}
+
+.calculator form select {
+  padding: 5px;
+  font-size: 3vmin;
+  font-weight: 500;
+  color: #FFF;
+  margin-bottom: 5vh;
+}
+
+/* End Calculator */
+/* Start FramWork */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 31, 47, 0.6);
+}
+
+.header {
+  margin-bottom: 5vh;
+  color: #ff8100;
+  font-size: 8vmin;
+}
+
+.padding-top {
+  padding-top: 15vh;
+}
+
+/* End FramWork */
+/* Media */
+@media (max-width: 991px) {
+  .navbar .navbar-nav .nav-item a {
+    font-size: 3vmin;
+  }
+
+  .navbar .navbar-nav i {
+    margin: 2vmin;
+  }
+
+  .home .home-info {
+    padding-left: 2vh;
+  }
+
+  .about-us {
+    padding-top: 15vh;
+  }
+
+  .about-us .about-us-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .plans .card {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+  }
+
+  .calculator form select,
+  .calculator form input {
+    margin-bottom: 2vh;
+  }
+
+  .btn-success {
+    font-size: 3vmin;
+  }
+
+  .lead {
+    font-size: 3vmin;
+  }
+}
+
+/* Media */
+@media (max-width: 540px) {
+
+  .home,
+  .about-us,
+  .calculator {
+    min-height: 70vh;
+  }
+
+  .plans .card {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+  }
+
+  .plans .card p {
+    margin-bottom: 15vmin;
+  }
+
+  .notes .note {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+  }
+
+  .calculator h1 {
+    padding-top: 10vh;
+  }
+
+  .calculator form select {
+    margin-bottom: 0;
+  }
+
+  .calculator {
+    padding-bottom: 3vh;
+  }
+
+}
+
+/* Media */
+@media (max-width: 420px) {
+  .plans .card ul li {
+    margin-bottom: 10vmin;
+  }
+}
+
+/* Start User */
+.login {
+  margin-top: 30vh;
+}
+
+.login form {
+  width: 30%;
+  margin: 0 auto;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  background: white;
+}
+
+.login form h2 {
+  padding: 4vh 0;
+  background-color: aliceblue;
+  color: #ffae5b;
+}
+
+.login form input {
+  border: 0;
+  border-bottom: 1px solid #c5ccd3;
+  width: 90%;
+  border-radius: 0;
+  margin: 0 auto;
+  padding: 3vh;
+}
+
+.login form input:last-of-type {
+  background: #ff8105;
+  color: #FFF;
+  font-size: 3vmin;
+}
+
+/* End User */
